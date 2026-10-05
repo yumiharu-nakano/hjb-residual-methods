@@ -16,10 +16,11 @@ is `[0,1] x [-1,1]^d`. Full-cylinder errors are also reported on
 ## Kernel experiments
 
 The default `C6` Wendland profile has the smoothness required by the paper for
-`d=1` and `d=2`. The code records the native-space norm of every computed
-candidate. If the unconstrained optimizer returns a coefficient vector outside
-the prescribed native-space ball, the vector is rescaled to satisfy the radius
-constraint.
+`d=1` and `d=2`. The initial coefficient vector is rescaled if necessary, and
+the optimization objective penalizes violations of the native-space radius.
+The code records the final native-space norm of every candidate. The saved
+candidates satisfy the prescribed radius when checked after optimization; the
+implementation does not project the final iterate onto the ball.
 
 The theorem-scaled `d=1` sequence uses
 `N_t = ceil(R^3)`, `N_x = N_t + 1`, and no extra residual points. It is a finite

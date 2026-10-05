@@ -94,13 +94,13 @@ commands are documented in the two experiment directories.
 
 ## Important interpretation
 
-The kernel computations enforce the native-space radius constraint after
-optimization by rescaling infeasible coefficient vectors. The PINN computations
-do **not** impose the hard parameter and Sobolev constraints assumed by the
-corresponding convergence theorem. Their layer-norm penalty is only an
-experimental regularizer. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the
-full distinction between the theoretical assumptions and the implemented
-experiments.
+The kernel computations penalize violations of the native-space radius and
+report the final native-space norm; all saved candidates satisfy the prescribed
+radius when checked after optimization. The PINN computations do **not** impose
+the hard parameter and Sobolev constraints assumed by the corresponding
+convergence theorem. Their layer-norm penalty is only an experimental
+regularizer. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the full distinction
+between the theoretical assumptions and the implemented experiments.
 
 ## Citation
 
