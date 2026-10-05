@@ -1,0 +1,25 @@
+\begin{table}[tb]
+  \centering
+  \small
+  \caption{Monotone finite-difference baseline for the $d=1$ test problem (central second differences inside the minimum over the diffusion level, upwind first differences, explicit Euler in $t$ under the CFL condition), evaluated on the same core and full grids and with the same metrics as Table~\ref{tab:ker.refine_d1}. \emph{oracle}: Dirichlet values at $|x|=R$ taken from the analytical solution; \emph{extrap}: linear extrapolation at $|x|=R$, i.e.\ no knowledge of the exact solution. The core errors coincide to the reported precision for the two treatments because the drift has speed at most $1$ and the diffusion coefficient is at most $0.08$.}
+  \label{tab:fd.compare_d1}
+  \begin{tabular}{llccccc}
+    \toprule
+    BC & $N^x$ & steps & $E_{\mathrm{RMS}}^{\mathrm{core}}$ & $E_{\infty}^{\mathrm{core}}$ & $E_{\mathrm{RMS}}$ & CPU [s] \\
+    \midrule
+    oracle & 16 & 5 & 7.127e-02 & 1.863e-01 & 6.116e-02 & 0.000 \\
+    oracle & 32 & 12 & 3.688e-02 & 9.127e-02 & 3.019e-02 & 0.001 \\
+    oracle & 64 & 33 & 1.933e-02 & 4.692e-02 & 1.543e-02 & 0.003 \\
+    oracle & 128 & 105 & 1.025e-02 & 2.436e-02 & 8.035e-03 & 0.008 \\
+    oracle & 256 & 370 & 5.352e-03 & 1.256e-02 & 4.153e-03 & 0.037 \\
+    oracle & 512 & 1386 & 2.751e-03 & 6.441e-03 & 2.121e-03 & 0.157 \\
+    \midrule
+    extrap & 16 & 5 & 7.127e-02 & 1.863e-01 & 7.902e-02 & 0.000 \\
+    extrap & 32 & 12 & 3.688e-02 & 9.127e-02 & 3.916e-02 & 0.001 \\
+    extrap & 64 & 33 & 1.933e-02 & 4.692e-02 & 1.984e-02 & 0.002 \\
+    extrap & 128 & 105 & 1.025e-02 & 2.436e-02 & 1.119e-02 & 0.006 \\
+    extrap & 256 & 370 & 5.352e-03 & 1.256e-02 & 7.314e-03 & 0.023 \\
+    extrap & 512 & 1386 & 2.751e-03 & 6.441e-03 & 5.658e-03 & 0.098 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

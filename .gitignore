@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.matplotlib-cache/
+*.log
+smoke_*.csv
+build/
+dist/

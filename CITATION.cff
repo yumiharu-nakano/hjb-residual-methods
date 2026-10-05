@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript."
+title: "Residual-based kernel and neural-network methods for HJB equations"
+type: software
+authors:
+  - family-names: Nakano
+    given-names: Yumiharu
+repository-code: "https://github.com/yumiharu-nakano/hjb-residual-methods"
+license: MIT
+version: 0.1.0
+date-released: 2026-10-05
