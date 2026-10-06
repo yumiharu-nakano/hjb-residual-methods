@@ -82,8 +82,9 @@ reported accuracy.
 
 ## Reproducing the reported outputs
 
-The saved CSV files, figures, LaTeX tables, and PINN checkpoints are included.
-To regenerate all experiments and derived outputs, run
+The saved CSV files, figures, and PINN checkpoints are included. The
+postprocessing scripts regenerate the LaTeX table fragments used by the paper.
+To rerun all experiments and regenerate the derived outputs, run
 
 ```bash
 ./run_all.sh

@@ -4,7 +4,7 @@
 
 - source code for the kernel and PINN experiments;
 - the CSV files used to construct the reported tables and figures;
-- generated plots and LaTeX table fragments;
+- generated plots and scripts that regenerate the LaTeX table fragments;
 - the retained PINN state dictionaries and their training metadata;
 - scripts that regenerate the derived outputs.
 

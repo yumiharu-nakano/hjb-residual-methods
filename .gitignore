@@ -5,5 +5,7 @@ __pycache__/
 .matplotlib-cache/
 *.log
 smoke_*.csv
+kernel_experiments/table_*.tex
+pinn_experiments/table*.tex
 build/
 dist/
