@@ -2,7 +2,9 @@
 
 Reference implementation for the numerical experiments in the manuscript
 
-> *Convergence of kernel and neural-network methods for Hamilton--Jacobi--Bellman equations on unbounded domains*, Yumiharu Nakano.
+> Yumiharu Nakano, *Convergence of kernel and neural-network methods for
+> Hamilton--Jacobi--Bellman equations on unbounded domains*,
+> [arXiv:2610.09299](https://arxiv.org/abs/2610.09299) [math.NA], 2026.
 
 The repository compares two residual-based realizations for a manufactured
 Hamilton--Jacobi--Bellman (HJB) equation on an expanding space-time cylinder:
@@ -105,9 +107,24 @@ between the theoretical assumptions and the implemented experiments.
 
 ## Citation
 
-Please cite the accompanying manuscript. A `CITATION.cff` file is included so
-that GitHub can generate a software citation. The bibliographic entry will be
-updated when the manuscript receives a public identifier.
+Please cite the accompanying manuscript:
+
+```bibtex
+@misc{nakano2026convergence,
+  title         = {Convergence of kernel and neural-network methods for
+                   Hamilton--Jacobi--Bellman equations on unbounded domains},
+  author        = {Yumiharu Nakano},
+  year          = {2026},
+  eprint        = {2610.09299},
+  archivePrefix = {arXiv},
+  primaryClass  = {math.NA},
+  doi           = {10.48550/arXiv.2610.09299},
+  url           = {https://arxiv.org/abs/2610.09299}
+}
+```
+
+The `CITATION.cff` file also contains this preferred citation so that GitHub
+can display it directly.
 
 ## License
 

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the accompanying manuscript."
+message: "If you use this software, please cite the accompanying paper."
 title: "Residual-based kernel and neural-network methods for HJB equations"
 type: software
 authors:
@@ -9,3 +9,12 @@ repository-code: "https://github.com/yumiharu-nakano/hjb-residual-methods"
 license: MIT
 version: 0.1.0
 date-released: 2026-10-05
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Nakano
+      given-names: Yumiharu
+  title: "Convergence of kernel and neural-network methods for Hamilton--Jacobi--Bellman equations on unbounded domains"
+  year: 2026
+  doi: "10.48550/arXiv.2610.09299"
+  url: "https://arxiv.org/abs/2610.09299"
